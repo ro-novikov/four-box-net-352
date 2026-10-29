@@ -86,3 +86,5 @@ pairwise conditions cannot hold together, because some chain closes into a cycle
 So each long edge carries at most two reflection gluings, and the strip at most 2 × 2 = 4 boxes. This argument is for
 notches and tabs as described in section 1; with exact corner shapes (section 4) it was checked on examples with
 corner size h = 2 and h = 4, not proved in general. A fifth box needs a folding that does not act on a whole edge.
+The limit of two reflection gluings per edge was stated by Silverstein and Silverstein in
+[five-box-net-2128](https://github.com/Sprite143/five-box-net-2128); the argument above is ours.

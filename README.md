@@ -36,8 +36,9 @@ construction.
 
 - Two four-box nets of 352 squares, net A and net B.
 - The construction for any strip direction (p, q), with a formula for the area and the four boxes.
-- Two rules of the construction: notches and tabs fit together only when the number m is odd, and one strip gives at
-  most four boxes (argued for notches and tabs; see `docs/construction.md`, section 5).
+- Two rules of the construction, with an argument for notches and tabs (`docs/construction.md`, section 5): notches and
+  tabs fit together only when the number m is odd, and each edge carries at most two reflections, so one strip gives
+  at most four boxes. The limit of two per edge was stated by Silverstein and Silverstein in [4]; the argument is ours.
 - Two methods for the corners: a search of notch and tab shapes on the square grid (net A), and an exact integer
   program (net B).
 - A series of four-box nets given by the formula, which contains the 532 net of [1]; 20 members checked with the
@@ -149,11 +150,11 @@ boxes.
 3. Z. Abel, E. Demaine, M. Demaine, H. Matsui, G. Rote, R. Uehara, *Common developments of several different orthogonal
    boxes*, CCCG 2011, pp. 77–82: among other results, a long strip folds into any number of flat boxes (doubly covered
    rectangles).
+4. C. Silverstein, R. Silverstein, [five-box-net-2128](https://github.com/Sprite143/five-box-net-2128), 2026: a polyomino
+   that folds into five different boxes.
 
 Related work:
 
-- C. Silverstein, R. Silverstein, [five-box-net-2128](https://github.com/Sprite143/five-box-net-2128), 2026: a polyomino
-  that folds into five different boxes.
 - T. Shirakawa, R. Uehara, *Common developments of three different orthogonal boxes*, CCCG 2012, pp. 17–21: the first
   polygon that folds into three boxes of positive volume (area 1792), and an infinite family. Journal version:
   *Common developments of three incongruent orthogonal boxes*, Int. J. Comput. Geom. Appl. 23(1) (2013) 65–71.
