@@ -3,7 +3,7 @@
 The construction is the one of Reed Silverstein and Conner Silverstein
 ([four-box-net-532, docs/how-we-found-the-four-box-net.md](https://github.com/Sprite143/four-box-net-532/blob/main/docs/how-we-found-the-four-box-net.md)),
 generalised from strip direction (2, 1) to any direction (p, q). Section 1 restates their idea; sections 2–4 are the
-generalisation; section 5 explains why the construction gives at most four boxes.
+generalisation; section 5 gives the rule for m and the limit of two reflections per edge.
 
 ## 1. Strip, two reflection gluings per edge, four pillowcases
 
@@ -74,17 +74,19 @@ strip. Each reflection gluing x ↔ a − x (mod W) has two fixed points, a/2 an
 the corners all repeat after W/2. The 532 net of Silverstein and Silverstein has the same structure. Up to the
 symmetries of the strip, nets A and B differ in 20 squares.
 
-## 5. Why this construction stops at four boxes
+## 5. Notches and tabs: the rule for m, and two reflections per edge
 
-On one long edge of the strip (a cycle of length W), take two reflections x ↦ c₁ − x and x ↦ c₂ − x. Following a notch
-from one corner point, it alternates notch, tab, notch, … along the chain of partners until it reaches the next corner
-point, which must again be a notch, so the chain has even length. This works exactly when 2^v divides c₁ − c₂, where
-2^v is the largest power of 2 that divides W. In the family, the parameter sets that pass are exactly those with m odd
-(checked for all 860 parameter sets in the search range). Three reflections on one edge are never consistent: the three
-pairwise conditions cannot hold together, because some chain closes into a cycle of odd length.
+On one long edge of the strip (a cycle of length W), take two reflections x ↦ c₁ − x and x ↦ c₂ − x with c₁, c₂ even,
+so that each has two corner points, at c/2 and c/2 + W/2. Following a notch from one corner point, it alternates
+notch, tab, notch, … along the chain of partners until it reaches the next corner point, which must again be a notch,
+so the chain has even length. This works exactly when 2^v divides c₁ − c₂, where 2^v is the largest power of 2 that
+divides W: then every chain from a corner point ends at a corner point after an even number of steps and every
+closed chain has even length, so the labelling exists. In the family, the parameter sets that pass are exactly those
+with m odd (checked for all 860 parameter sets in the search range).
 
-So each long edge carries at most two reflection gluings, and the strip at most 2 × 2 = 4 boxes. This argument is for
-notches and tabs as described in section 1; with exact corner shapes (section 4) it was checked on examples with
-corner size h = 2 and h = 4, not proved in general. A fifth box needs a folding that does not act on a whole edge.
-The limit of two reflection gluings per edge was stated by Silverstein and Silverstein in
-[five-box-net-2128](https://github.com/Sprite143/five-box-net-2128); the argument above is ours.
+Three reflections on one edge: the three pairwise conditions can all hold (for example W = 6, c = 0, 2, 4), but no
+labelling of notches and tabs fits all three at once in any case computed (all even W up to 120, all even c). This
+is not proved. The limit of two reflection gluings per edge, and with it of four boxes for one strip, was stated by
+Silverstein and Silverstein in [five-box-net-2128](https://github.com/Sprite143/five-box-net-2128); for notches and
+tabs it is checked here by computation. For exact corner shapes (section 4) neither the rule nor the limit is proved
+here. A fifth box needs a folding that does not act on a whole edge.

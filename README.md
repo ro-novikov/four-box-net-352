@@ -36,9 +36,10 @@ construction.
 
 - Two four-box nets of 352 squares, net A and net B.
 - The construction for any strip direction (p, q), with a formula for the area and the four boxes.
-- Two rules of the construction, with an argument for notches and tabs (`docs/construction.md`, section 5): notches and
-  tabs fit together only when the number m is odd, and each edge carries at most two reflections, so one strip gives
-  at most four boxes. The limit of two per edge was stated by Silverstein and Silverstein in [4]; the argument is ours.
+- A rule of the construction for notches and tabs (`docs/construction.md`, section 5): they fit together only when
+  the number m is odd. That each edge carries at most two reflections, so that one strip gives at most four boxes,
+  was stated by Silverstein and Silverstein in [4]; for notches and tabs it is checked here by computation (all edge
+  lengths up to 120), not proved.
 - Two methods for the corners: a search of notch and tab shapes on the square grid (net A), and an exact integer
   program (net B).
 - A series of four-box nets given by the formula, which contains the 532 net of [1]; 20 members checked with the
@@ -79,7 +80,7 @@ Net A and net B: (p, q) = (4, 3), c = 1, m = 15, strip 750 × 12.
 | 15 · 1 | 60×3 | 1×2×58 |
 
 The 532 net of [1] has (p, q) = (2, 1), c = 3, m = 15. Details, including why the notches and tabs fit together only
-when m is odd and why one strip carries at most four boxes: [`docs/construction.md`](docs/construction.md). The search
+when m is odd: [`docs/construction.md`](docs/construction.md). The search
 programs are in [multi-box-nets](https://github.com/ro-novikov/multi-box-nets).
 
 ## Net A and net B
