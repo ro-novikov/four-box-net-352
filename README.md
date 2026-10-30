@@ -38,8 +38,8 @@ construction.
 - The construction for any strip direction (p, q), with a formula for the area and the four boxes.
 - A rule of the construction for notches and tabs (`docs/construction.md`, section 5): they fit together only when
   the number m is odd. That each edge carries at most two reflections, so that one strip gives at most four boxes,
-  was stated by Silverstein and Silverstein in [4]; for notches and tabs it is checked here by computation (all edge
-  lengths up to 120), not proved.
+  was stated by Silverstein and Silverstein in [4]; for notches and tabs it is proved in [multi-box-nets](https://github.com/ro-novikov/multi-box-nets)
+  (`docs/proofs.md`, Corollary 5 and Theorem 6).
 - Two methods for the corners: a search of notch and tab shapes on the square grid (net A), and an exact integer
   program (net B).
 - A series of four-box nets given by the formula, which contains the 532 net of [1]; 20 members checked with the

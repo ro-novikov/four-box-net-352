@@ -85,8 +85,9 @@ closed chain has even length, so the labelling exists. In the family, the parame
 with m odd (checked for all 860 parameter sets in the search range).
 
 Three reflections on one edge: the three pairwise conditions can all hold (for example W = 6, c = 0, 2, 4), but no
-labelling of notches and tabs fits all three at once in any case computed (all even W up to 120, all even c). This
-is not proved. The limit of two reflection gluings per edge, and with it of four boxes for one strip, was stated by
-Silverstein and Silverstein in [five-box-net-2128](https://github.com/Sprite143/five-box-net-2128); for notches and
-tabs it is checked here by computation. For exact corner shapes (section 4) neither the rule nor the limit is proved
-here. A fifth box needs a folding that does not act on a whole edge.
+labelling of notches and tabs fits all three at once (proved in [multi-box-nets](https://github.com/ro-novikov/multi-box-nets),
+`docs/proofs.md`, Corollary 5). The limit of two reflection gluings per edge, and with it of four boxes for one strip,
+was stated by Silverstein and Silverstein in [five-box-net-2128](https://github.com/Sprite143/five-box-net-2128); for
+notches and tabs it follows. For exact corner shapes (section 4) neither the rule nor the limit is proved here, and the
+rule for m is then not a condition in general (`docs/proofs.md`, remark after Lemma 2). A fifth box needs a folding
+that does not act on a whole edge.

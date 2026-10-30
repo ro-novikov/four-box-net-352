@@ -20,6 +20,7 @@ boxes among the ten boxes of area 352. Tested with Java 21; run from the reposit
 
 ```
 git clone https://github.com/hidny/CuboidSimplePhaseNetSearch
+git -C CuboidSimplePhaseNetSearch checkout 3142fef   # the version tested here
 javac -d classes -sourcepath CuboidSimplePhaseNetSearch/src verify/CheckNet.java
 java -Xss512m -cp classes CheckNet data/net-352-a-cells.txt 1,2,58 2,2,43 2,3,34 2,4,28 2,7,18 2,8,16 2,10,13 4,4,20 4,8,12 7,8,8
 ```
